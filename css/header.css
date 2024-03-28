@@ -3,7 +3,6 @@
     background-color: var(--verde-claro);
     color: white;
     width: 100vw;
-    display: flex;
     justify-content: center;
     font-size: 22px;
     align-items: center;
@@ -145,11 +144,14 @@
 
     .opções {
         display: flex;
+        justify-content: center;
         
     }    
 
     .opções__item {
         text-transform: uppercase;
+        padding: 1.5em;
+        
     }
 
     .opções__link {

@@ -1,7 +1,9 @@
 .banner {
     background: var(--rosa);
-    color: var(--branco);
-    text-align: center;
+    color: black;
+    height: 4em;
+    margin: 1em 1em;
+    display: none;
 }
 
 .banner__titulo {
@@ -41,6 +43,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .banner {
+        display: block;
+        margin: 0;
+    }
+    
     .banner__titulo {
         font-size: 36px;
     }
@@ -60,7 +67,6 @@
 }
 
 @media screen and (min-width: 1728px) {
-
     .banner__pesquisa {
         width: 40%;
         margin-left: 55px;
