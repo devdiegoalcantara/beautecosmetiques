@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beaute Cosmétiques</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaute Cosmétiques</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
 </head>
-
 <body>
     <div class="promocao"> <img class="imagem__promocao" src="img/delivery-64.png" alt="delivery-truck">Frete GRÁTIS para todo o Brasil! </div>
     
@@ -32,15 +32,14 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Cabelos</a></li>
             </ul>
             <img src="img/logoPerfume.png" alt="Logo da Alurabooks" class="container__imagem__logo">
-            <h1 class="container__titulo"><b class="container__titulo--negrito">BeautéCosmétiques</h1></b>
+            <h1 class="container__titulo"><b class="container__titulo--negrito">BeautéCosmétiques</b></h1>
         </div>             
-                    <input type="search" class="banner__pesquisa" placeholder="O que você procura hoje?">
-                    <button type="submit" class="btn-search">
-                        <a href="#"><img class="icon-search " src="https://res.cloudinary.com/beleza-na-web/image/upload/f_svg,fl_progressive,q_auto:eco/v1/blz/assets-store/0.0.448/images/icons/search-white.svg" alt="Ícone de lupa" width="20" height="20"></a>
-                    </button>  
-                <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos"
-                    class="container__imagem container__imagem-transparente"></a>
+        <input type="search" class="banner__pesquisa" placeholder="O que você procura hoje?">
+        <button type="submit" class="btn-search">
+            <a href="#"><img class="icon-search " src="https://res.cloudinary.com/beleza-na-web/image/upload/f_svg,fl_progressive,q_auto:eco/v1/blz/assets-store/0.0.448/images/icons/search-white.svg" alt="Ícone de lupa" width="20" height="20"></a>
+        </button>  
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
             <a href="#" class="container__link">
                 <img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem">
                 <p class="container__texto">Sacola</p>
@@ -51,39 +50,57 @@
             </a>
         </div>
     </header>
+
     <section class="banner">
         <ul class="opções">
-            <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu" class="opções__rotulo">
-                <li class="opções__item">Promoções</li>
-            </label>
-
-            <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Perfumaria</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Corpo e Banho</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Make</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">SkinCare</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Cabelos</a>
-                </li>
-            </ul>
-
-            <li class="opções__item"><a href="#" class="opções__link">Perfumaria</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Promoções</a>
+                <ul class="lista-menu" id="submenu-promoções">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Leve 3 pague 2</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Mais Vendidos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Cupons</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Promoções exclusivas</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">OFF 20%</a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li class="opções__item"><a href="#" class="opções__link">Perfumaria</a>
+                <ul class="lista-menu2" id="submenu-promoções">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Perfume Femininos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Perfumes Masculinos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Kits para presentes</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Dior</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Calvin Klein</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="opções__item"><a href="#" class="opções__link">Cabelos</a></li>
             <li class="opções__item"><a href="#" class="opções__link">Corpo e Banho</a></li>
             <li class="opções__item"><a href="#" class="opções__link">Make</a></li>
             <li class="opções__item"><a href="#" class="opções__link">SkinCare</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Cuidados Pessoais</a></li>
         </ul>
     </section>
+    
     <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
         <div class="carrossel__container">
             <div class="swiper">
@@ -93,163 +110,25 @@
 
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
-                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Liderança.svg"
-                            alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Javascript.svg"
-                            alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                    <div class="swiper-slide"><img src="img/carrossel1.webp" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/carrossel2.webp" alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/carrossel3.webp" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/carrossel4.webp" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/carrossel5.jpg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/carrossel6.webp" alt="livro sobre acessibilidade"></div>
                 </div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-
-            <div class="card">
-                <!-- 1º linha -->
-                <div class="card__descrição">
-                    <!-- 1º coluna -->
-                    <div class="descrição">
-                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    </div>
-                    <!-- 2º coluna -->
-                    <img src="img/Angular.svg" class="descrição__imagem">
-                </div>
-
-                <!-- 2º linha -->
-                <div class="card__botões">
-                    <!-- 1º coluna -->
-                    <ul class="botões">
-                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    </ul>
-                    <!-- 2º coluna -->
-                    <a href="#" class="botões__ancora">Saiba mais</a>
-                </div>
-            </div>
         </div>
-    </section>
-    <section class="carrosel">
-        <h2 class="carrossel__titulo">Mais Vendidos</h2>
-        <!-- Slider main container -->
-        <div class="carrossel__container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+    </section>  
 
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
-                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Liderança.svg"
-                            alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Javascript.svg"
-                            alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-                </div>
+    <section>
+        <h2 class="carrossel__titulo">Descubra sua beleza sem regras</h2>
+    </section>    
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card">
-                <!-- 1º linha -->
-                <div class="card__descrição">
-                    <!-- 1º coluna -->
-                    <div class="descrição">
-                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-                        <h3 class="descrição__titulo">Autora do Mês</h3>
-                        <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
-                        <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em
-                            Front-End.
-                        </p>
-                    </div>
-                    <!-- 2º coluna -->
-                    <img src="img/Escritora.svg" class="descrição__imagem">
-                </div>
-
-                <!-- 2º linha -->
-                <div class="card__botões">
-                    <!-- 1º coluna -->
-                    <ul class="botões">
-                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    </ul>
-                    <!-- 2º coluna -->
-                    <a href="#" class="botões__ancora">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="tópicos">
-        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="tópicos__lista">
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Android</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Marketing Digital</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Agile</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Startups</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">HTML & CSS</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Python</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">OO</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Java</a>
-            </li>
-        </ul>
-    </section>
-    <section class="tópicos invertido">
-        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="tópicos__lista">
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Android</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">OO</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Marketing Digital</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Agile</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Startups</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">HTML & CSS</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Java</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Python</a>
-            </li>
-        </ul>
-    </section>
     <section class="contato">
         <div class="contato__descrição">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
@@ -340,11 +219,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>const swiper = new Swiper('.swiper', {
+    <script>
+        const swiper = new Swiper('.swiper', {
             loop: true,
             autoplay: true,
-            spaceBetween: 40,
-            slidesPerView: 3,
+            spaceBetween: 0,
+            slidesPerView: 1,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -355,8 +235,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
     </script>
 </body>
-
 </html>

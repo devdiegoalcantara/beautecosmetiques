@@ -53,12 +53,13 @@
     }
 
     .btn-search {
-        margin-right: 17%;
+        margin: 0 auto;
     }
     
     .banner__pesquisa {
-        width: 50%;
-        margin-left: 8%;
+        width: 100%;
+        margin: 0 auto; 
+        margin-left: 5px;
     }
 
     .banner__pesquisa::placeholder {
@@ -68,8 +69,11 @@
 
 @media screen and (min-width: 1728px) {
     .banner__pesquisa {
-        width: 40%;
-        margin-left: 55px;
+        width: 30%;
+       margin-left: 5%;
+    }
+    .btn-search {
+        margin-right:10%;
     }
 
     .banner__pesquisa::placeholder {
