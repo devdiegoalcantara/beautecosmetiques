@@ -117,7 +117,7 @@
     .promocao {
         width: 60vw;
         font-size: 24px;
-        margin-left: 21%;
+        margin: 0 auto;
         
     }
     .cabecalho {
