@@ -101,7 +101,7 @@
     .carrossel__container {
         display: flex;
         align-items: center;
-        margin: 0em 20vw 3em 20vw;
+        margin: 0em 20vw 1em 20vw;
         
     }
 
@@ -115,6 +115,7 @@
 
     .swiper {
         width: 100%;
+        margin-top: 16px;
     }
 
     .descrição__titulo {
