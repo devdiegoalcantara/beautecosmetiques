@@ -6,15 +6,16 @@
     justify-content: center;
     font-size: 22px;
     align-items: center;
-    
-    
+
+
 }
 
 .imagem__promocao {
     margin-bottom: 15px;
-    padding-right:10px;
+    padding-right: 10px;
 
 }
+
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
@@ -24,7 +25,7 @@
     background-position: center;
 }
 
-.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
     background-image: url("../img/Menu_Aberto.svg");
 }
 
@@ -33,7 +34,7 @@
 }
 
 .cabecalho {
-    background-color:var(--branco);
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -77,7 +78,7 @@
     color: var(--azul-degrade);
     font-weight: 700;
     text-transform: uppercase;
-    
+
 }
 
 .lista-menu__link {
@@ -125,6 +126,7 @@
     border-radius: 12px;
     box-shadow: 1px 1px 1px black;
 }
+
 .lista-menu__item {
     margin-bottom: 5px;
 }
@@ -150,7 +152,7 @@
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    
+
 }
 
 .cards {
@@ -158,7 +160,7 @@
     background-color: var(--branco);
     width: 280px;
     height: 450px;
-    border: 0.5px solid lightgray;    
+    border: 0.5px solid lightgray;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: 15px;
     font-family: var(--fonte-cards);
@@ -172,13 +174,55 @@
     margin: 20px
 }
 
-#estrelas  {
+#estrelas {
     width: 7em;
     margin-top: 1em;
     margin-left: auto;
 }
+
 .main strong {
     font-weight: bold;
+}
+
+.btn-comprar {
+    background-color: var(--rosa-claro);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--fonte-card);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    box-shadow: var(--rosa-claro) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.cards:hover .descrição {
+    display: none;
+}
+
+.cards:hover .btn-comprar {
+    display: block;
+}
+.favoritar-container {
+    margin-left: 16px;
+    position: absolute;
+    z-index: 1;
+}
+.favoritar {
+    background-color: rgb(238, 235, 235);
+    color: rgb(82, 82, 82);
+    font-size: 24px;
+    width: 1em;
+    height: 1em;
+    padding: 10px;
+    border-radius: 50%;
+}
+.cards .favoritar:hover {
+    color: #ff0000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -189,9 +233,10 @@
         padding: 10px;
         border: 1px solid #ccc;
         width: 12em;
-        margin-top: -70.4vh;        
-        z-index: 1001; 
+        margin-top: -70.4vh;
+        z-index: 1001;
     }
+
     .lista-menu-bug {
         margin-top: -68.5vh;
     }
@@ -201,14 +246,16 @@
         width: 60vw;
         font-size: 24px;
         margin: 0 auto;
-        
+
     }
+
     .cabecalho {
         padding: 0 5em;
     }
-    
+
     .container__titulo,
-    .container__titulo--negrito, a {
+    .container__titulo--negrito,
+    a {
         font-family: var(--fonte-tema);
         font-size: 40px;
         font-weight: 400;
@@ -219,7 +266,7 @@
     .container__titulo {
         font-weight: 400;
         display: block;
-        
+
     }
 
     .container__titulo--negrito {
@@ -231,24 +278,25 @@
     .opções {
         display: flex;
         justify-content: center;
-        
-    }    
+
+    }
 
     .opções__item {
         text-transform: uppercase;
         padding: 1.5em;
-        
+
     }
 
     .opções__link {
         text-decoration: none;
         color: var(--preto);
     }
+
     .opções__link:hover {
         color: var(--branco);
     }
 
-    .container__imagem-transparente, 
+    .container__imagem-transparente,
     .cabecalho__menu-hamburguer,
     .opções__botão {
         display: none;
@@ -258,7 +306,7 @@
         display: block;
         width: auto;
     }
- 
+
 }
 
 @media screen and (min-width: 1728px) {
@@ -269,14 +317,15 @@
         padding: 10px;
         border: 1px solid #ccc;
         width: 12em;
-        margin-top: -36%;        
-        z-index: 1001;  
-        
+        margin-top: -36%;
+        z-index: 1001;
+
     }
+
     .lista-menu-bug {
         margin-top: -75.5vh;
     }
-            
+
     .container__link {
         display: flex;
         align-items: center;
