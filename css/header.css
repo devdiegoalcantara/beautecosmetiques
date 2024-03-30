@@ -7,7 +7,6 @@
     font-size: 22px;
     align-items: center;
 
-
 }
 
 .imagem__promocao {
@@ -72,6 +71,8 @@
 .lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
+    position: relative;
+    z-index: 1001;
 }
 
 .lista-menu__titulo {
@@ -125,18 +126,17 @@
     border: 1px solid black;
     border-radius: 12px;
     box-shadow: 1px 1px 1px black;
+    position: absolute;
+    z-index: 1111;
 }
 
 .lista-menu__item {
     margin-bottom: 5px;
+    border-radius: 12px;
 }
 
 .opções__item {
     cursor: pointer;
-}
-
-.lista-menu.ativo {
-    display: block;
 }
 
 .cabecalho {
@@ -146,16 +146,42 @@
 
 .opções__item:hover .lista-menu {
     display: block;
+    z-index: 1001;
 }
 
+.sub-menu-2 {
+    position: absolute;
+    top: 10px;
+    left: 107%;
+    width: 40em;
+    height: 15em;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: none;
+}
+
+.sub2 {
+    top: -43px;
+}
+
+.sub-menu-2 li {
+    display: block;
+  }
+.lista-menu li:hover .sub-menu-2 {
+    display: flex;
+}
+
+
 .main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1em;
-        min-width: 560px;
-        margin-left: -1.9em;
-        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    min-width: 560px;
+    margin-left: -1.9em;
+
 }
 
 
@@ -170,14 +196,14 @@
     border: 0.5px solid lightgray;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: 10px;
-    font-family: var(--fonte-cards);  
-    font-size: 0.8em; 
-     
+    font-family: var(--fonte-cards);
+    font-size: 0.8em;
+
 }
 
 .descrição {
     font-size: .8125rem;
-    line-height: .9375rem; 
+    line-height: .9375rem;
 }
 
 
@@ -198,6 +224,7 @@
 .main strong {
     font-weight: bold;
 }
+
 .preço {
     font-size: 1.5em;
 }
@@ -226,11 +253,13 @@
 .cards:hover .btn-comprar {
     display: block;
 }
+
 .favoritar-container {
     margin-left: 12px;
     position: absolute;
     z-index: 1;
 }
+
 .favoritar {
     background-color: #f5f5f5;
     color: rgb(165, 163, 163);
@@ -241,18 +270,21 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
 .cards .favoritar:hover {
     color: #ff0000;
 }
 
 @media screen and (min-width: 1024px) {
     .main {
-      margin-left: 1.9em;
-      
+        margin-left: 1.9em;
+
     }
+
     .cards {
         margin: 10px;
     }
+
     .lista-menu {
         display: none;
         position: absolute;
@@ -263,7 +295,7 @@
         margin-top: -70.4vh;
         z-index: 1001;
     }
-     
+
     .lista-menu-bug {
         margin-top: -68.5vh;
     }
@@ -273,11 +305,14 @@
         width: 60vw;
         font-size: 24px;
         margin: 0 auto;
+        position: relative;
+        z-index: 1001;
 
     }
 
     .cabecalho {
         padding: 0 5em;
+        z-index: 1001;
     }
 
     .container__titulo,
@@ -305,7 +340,6 @@
     .opções {
         display: flex;
         justify-content: center;
-
     }
 
     .opções__item {
@@ -334,18 +368,39 @@
         width: auto;
     }
 
+    .opções__link::after,
+    .lista-menu::after {
+        content: "";
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70.5vh;
+        background-color: rgba(0, 0, 0, 0);
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1000;
+    }
+    
+    .lista-menu:hover::after,
+    .opções__link:hover::after,
+    .lista-menu .item:hover::after {
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+    }
+
 }
 
 @media screen and (min-width: 1728px) {
     .lista-menu {
         display: none;
         position: absolute;
-        background-color: #fff;
+        background-color: white;
         padding: 10px;
         border: 1px solid #ccc;
         width: 12em;
         margin-top: -36%;
-        z-index: 1001;
+        z-index: 1002;
 
     }
 
@@ -372,4 +427,9 @@
     .container__texto {
         display: block;
     }
+    .opções__link::after,
+    .lista-menu::after {
+    height: 75.1vh;
+    }
+
 }
