@@ -277,9 +277,8 @@
 
 @media screen and (min-width: 1024px) {
     .main {
-        margin-left: 1.9em;
-
-    }
+    margin-left: 1.9em;
+       }
 
     .cards {
         margin: 10px;
