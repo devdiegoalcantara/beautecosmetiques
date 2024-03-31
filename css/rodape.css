@@ -12,6 +12,7 @@ hr {
 }
 .creditos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
     text-align: center;
