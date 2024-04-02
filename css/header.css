@@ -59,18 +59,22 @@
 .cart {
     position: fixed;
     top: 0;
-    right: 0%;
-    width: 330px;
+    right: -100%;
+    width: 445px;
+    max-height: 100vh;
     min-height: 100vh;
     padding: 20px;
     background: var(--branco);
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     font-family: var(--fonte-principal);
-    transition: 0.3s ;
-}  
+    transition: 0.3s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
 
 .cart.active {
-right: 0;
+    right: 0;
 }
 
 .cart-title {
@@ -87,7 +91,7 @@ right: 0;
 
 .cart-quantity {
     border: 1px solid var(--preto);
-    outline-color:var(--verde-claro);
+    outline-color: var(--verde-claro);
     width: 2.4rem;
     text-align: center;
     font-size: 1rem;
@@ -112,15 +116,15 @@ right: 0;
 
 .btn-buy {
     display: flex;
-    margin: 1.5rem auto 0 auto;
+    margin: 1.5rem auto 2rem auto;
     padding: 12px 20px;
     border: none;
     background-color: var(--rosa-claro);
-    color: #fff;
-    font-weight: bold;
+    color: var(--branco);
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: var(--fonte-card);
+    font-family: var(--fonte-cards);
     box-shadow: var(--rosa-claro) 1.95px 1.95px 2.6px;
     border-radius: 5px;
     cursor: pointer;
@@ -128,7 +132,7 @@ right: 0;
 }
 
 .btn-buy:hover {
-    color: var(--verde-claro);
+    background-color: var(--verde-claro);
 }
 
 #close-cart {
@@ -286,7 +290,8 @@ right: 0;
 
 .sub-menu-2 li {
     display: block;
-  }
+}
+
 .lista-menu li:hover .sub-menu-2 {
     display: flex;
 }
@@ -395,8 +400,12 @@ right: 0;
 
 @media screen and (min-width: 1024px) {
     .main {
-    margin-left: 1.9em;
-       }
+        margin-left: 1.9em;
+    }
+
+    .cart {
+        width: 330px;
+    }
 
     .cards {
         margin: 10px;
@@ -498,7 +507,7 @@ right: 0;
         pointer-events: none;
         z-index: 1000;
     }
-    
+
     .lista-menu:hover::after,
     .opções__link:hover::after,
     .lista-menu .item:hover::after {
@@ -544,9 +553,10 @@ right: 0;
     .container__texto {
         display: block;
     }
+
     .opções__link::after,
     .lista-menu::after {
-    height: 75.1vh;
+        height: 75.1vh;
     }
 
 }
