@@ -67,8 +67,8 @@ function addCartClicked(event){
     var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName ("product-title")[0].innerText;
     var price = shopProducts.getElementsByClassName ("preço")[0].innerText
-    var productImg = shopProducts.getElementsByClassName ("")[0].innerText    
-    console.log(title,price);
+    var productImg = shopProducts.getElementsByClassName ("product-img")[0].src;    
+    console.log(title,price,productImg);
 }
 
 
