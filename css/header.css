@@ -56,6 +56,124 @@
     padding: 9px 0px;
 }
 
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    width: 330px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--branco);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    font-family: var(--fonte-principal);
+    transition: 0.3s ;
+}  
+
+.cart.active {
+right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    margin-top: 2rem;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--preto);
+    outline-color:var(--verde-claro);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--preto);
+}
+
+.total-price {
+    margin-left: 0.5em;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--rosa-claro);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--fonte-card);
+    box-shadow: var(--rosa-claro) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-buy:hover {
+    color: var(--verde-claro);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 0px 10px 10px 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .lista-menu {
     display: none;
     position: absolute;

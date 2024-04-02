@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,7 +55,7 @@
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos"
                     class="container__imagem container__imagem-transparente"></a>
-            <a href="#" class="container__link">
+            <a href="#" class="container__link" id="cart-icon">
                 <img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem">
                 <p class="container__texto">Sacola</p>
             </a>
@@ -62,6 +63,33 @@
                 <img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem">
                 <p class="container__texto">Minha Conta</p>
             </a>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Sua Sacola</h2>
+                <!-- Content -->
+                <div class="cart-content">
+
+                    <div class="cart-box">
+                        <img src="img/perfum1.webp" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Malbec</div>
+                            <div class="cart-price">R$129.90</div>
+                            <input type="number" value="1" min="1" class="cart-quantity">
+                        </div>
+                        <!-- Remove Cart -->
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+                    </div>
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R$0</div>
+                </div>
+                <!-- Buy Buttom -->
+                <button type="button" class="btn-buy">Comprar</button>
+                <!-- Cart Close -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
         </div>
     </header>
 
@@ -254,7 +282,7 @@
                 </div>
                 <img src="img/kit1.webp" alt="Kit dia das Mães">
                 <p>
-                    <strong>FLORATTA</strong> <br>
+                    <strong class="product-title">FLORATTA</strong> <br>
                     Kit Presente Dia das Mães Red (3 itens)
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 229,90</strong> <br>
@@ -272,7 +300,7 @@
                 </div>
                 <img src="img/perfum5.webp" alt="Perfume Liz">
                 <p>
-                    <strong>LIZ</strong> <br>
+                    <strong class="product-title">LIZ</strong> <br>
                     Desodorante Colônia 100ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 149,90</strong> <br>
@@ -290,7 +318,7 @@
                 </div>
                 <img src="img/creme1.webp" alt="Creme Lily">
                 <p>
-                    <strong>LILY</strong> <br>
+                    <strong class="product-title">LILY</strong> <br>
                     Creme Acetinado Hidratante 250g
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 116,90</strong> <br>
@@ -308,7 +336,7 @@
                 </div>
                 <img src="img/perfum6.webp" alt="Perfume Coffee">
                 <p>
-                    <strong>COFFEE</strong> <br>
+                    <strong class="product-title">COFFEE</strong> <br>
                     Woman Seduction Colônia 100ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 194,90</strong> <br>
@@ -360,7 +388,7 @@
                 </div>
                 <img src="img/perfum1.webp" alt="Perfume Malbec">
                 <p>
-                    <strong>MALBEC</strong> <br>
+                    <strong class="product-title">MALBEC</strong> <br>
                     Ultra Bleu Desodorante Colônia 100ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 179,90</strong> <br>
@@ -379,7 +407,7 @@
                 </div>
                 <img src="img/perfum4.webp" alt="Perfume Coffee Man ">
                 <p>
-                    <strong>COFFEE</strong> <br>
+                    <strong class="product-title">COFFEE</strong> <br>
                     Man Duo Desodorante Colônia 100ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 194,90</strong> <br>
@@ -396,7 +424,7 @@
                 </div>
                 <img src="img/perfum7.webp" alt="Perfume Zaad">
                 <p>
-                    <strong>ZAAD</strong> <br>
+                    <strong class="product-title">ZAAD</strong> <br>
                     Arctic Eau de Parfum 95ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 299,90</strong> <br>
@@ -414,7 +442,7 @@
                 </div>
                 <img src="img/perfum3.webp" alt="Perfume 214">
                 <p>
-                    <strong>BOTICA 214</strong> <br>
+                    <strong class="product-title">BOTICA 214</strong> <br>
                     Dark Mint Eau de Perfum 90ml
                     <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
                     <strong class="preço">R$ 204,90</strong> <br>
@@ -523,24 +551,25 @@
         <h2>Desenvolvido por Diego Soares de Alcântara Costa</h2>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+   <script src="js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
         const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: true,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                type: 'bullets',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+        loop: true,
+        autoplay: true,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            type: 'bullets',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+   </script>
 </body>
 
 </html>
