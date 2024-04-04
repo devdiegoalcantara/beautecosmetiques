@@ -56,6 +56,18 @@
     padding: 9px 0px;
 }
 
+#cart-counter {
+    background-color: #ff4500;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 12px;
+    margin-left: -1.1rem;
+    margin-top: 11px;
+
+}
+
 .cart {
     position: fixed;
     top: 0;
@@ -518,6 +530,10 @@
 }
 
 @media screen and (min-width: 1728px) {
+    #cart-counter {
+        margin-left:2.3rem;
+        margin-bottom: 2rem;    
+    }
     .lista-menu {
         display: none;
         position: absolute;

@@ -59,6 +59,7 @@ function buyButtonClicked() {
         cartContent.removeChild(cartContent.firstChild)
     }
     updateTotal();
+    updateCartCounter();
 }
 
 
@@ -67,6 +68,7 @@ function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     updateTotal();
+    updateCartCounter();
 }
 
 //Quantity Change
@@ -76,8 +78,21 @@ function quantityChanged(event) {
         input.value = 1
     }
     updateTotal();
+    updateCartCounter();
 }
 // Add to Cart
+function updateCartCounter() {
+    var cartItems = document.getElementsByClassName('cart-box');
+    var cartCounter = document.getElementById('cart-counter');
+    var totalItems = 0;
+    for (var i = 0; i < cartItems.length; i++) {
+        var quantityElement = cartItems[i].getElementsByClassName('cart-quantity')[0];
+        var quantity = parseInt(quantityElement.value);
+        totalItems += quantity;
+    }
+    cartCounter.innerText = totalItems;
+}
+
 function addCartClicked(event) {
     var button = event.target;
     var shopProducts = button.parentElement;
@@ -86,6 +101,7 @@ function addCartClicked(event) {
     var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
     addProductToCart(title, price, productImg);
     updateTotal();
+    updateCartCounter();
 }
 function addProductToCart(title, price, productImg) {
     var cartShopBox = document.createElement("div");
