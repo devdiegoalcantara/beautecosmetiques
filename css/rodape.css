@@ -5,11 +5,9 @@ hr {
 .rodapé {
     background-color: var(--rosa);
     padding: 1em;
-}
-
-.lista-rodapé {
     display: none;
 }
+
 .creditos {
     display: flex;
     flex-wrap: wrap;
