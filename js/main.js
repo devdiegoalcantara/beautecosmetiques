@@ -152,3 +152,39 @@ function updateTotal() {
     
 }
 
+//insetir produtos
+function carregarProdutos() {
+    fetch('produtos.json')
+      .then(response => response.json())
+      .then(produtos => {
+        const container = document.getElementById('produtos-container');
+  
+        produtos.forEach((produto, index) => {
+          const card = `
+            <div class="main">
+                <div class="cards card${index + 1}">
+                  <div class="favoritar-container">
+                    <i class="far fa-heart favoritar"></i>
+                  </div>
+                  <div class="product-box">
+                    <img src="${produto.imgSrc}" alt="${produto.alt}" class="product-img">
+                    <strong class="product-title">${produto.title}</strong> <br>
+                    ${produto.description} <br>
+                    <img src="img/Estrelinhas.svg" alt="avaliação" id="estrelas"> <br>
+                    <strong class="preço">${produto.price}</strong> <br>
+                    ${produto.installments} <br> <br>
+                    <button class="btn-comprar">${produto.buttonText}</button>
+                    <div class="descrição">${produto.description}</div>
+                  </div>
+                </div>
+            </div>
+          `;
+  
+          container.innerHTML += card;
+        });
+      })
+      .catch(error => console.error('Erro ao carregar produtos:', error));
+  }
+  
+  // Chame a função para carregar e renderizar os produtos
+  carregarProdutos();

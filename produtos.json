@@ -1,0 +1,38 @@
+[
+    {
+      "imgSrc": "img/perfum1.webp",
+      "alt": "Perfume Malbec",
+      "title": "MALBEC",
+      "description": "Mergulhe na fragrância amadeirada e fresca de Malbec Ultra Bleu, a versão mais intensa de Malbec Bleu.",
+      "price": "R$ 179,90",
+      "installments": "8X de R$ 22,49",
+      "buttonText": "Compre Agora ❯"
+    },
+    {
+      "imgSrc": "img/perfum4.webp",
+      "alt": "Perfume Coffee Man",
+      "title": "COFFEE MAN",
+      "description": "Com a inesquecível fragrância Amadeirado Fougére, o Coffee Man Duo é perfeito para homens sedutores.",
+      "price": "R$ 194,90",
+      "installments": "9X de R$ 21,66",
+      "buttonText": "Compre Agora ❯"
+    },
+    {
+      "imgSrc": "img/perfum7.webp",
+      "alt": "Perfume Zaad",
+      "title": "ZAAD",
+      "description": "Kit com os grandes sucessos de Floratta Red em itens que fazem toda a diferença no dia a dia de autocuidado.",
+      "price": "R$ 299,90",
+      "installments": "10X de R$ 29,99",
+      "buttonText": "Compre Agora ❯"
+    },
+    {
+      "imgSrc": "img/perfum3.webp",
+      "alt": "Perfume 214",
+      "title": "BOTICA 214",
+      "description": "Sinta fragrância refrescante e moderna de Botica 214 Dark Mint Eau De Parfum em todos os momentos especiais.",
+      "price": "R$ 204,90",
+      "installments": "10X de R$ 20,49",
+      "buttonText": "Compre Agora ❯"
+    }
+  ]
