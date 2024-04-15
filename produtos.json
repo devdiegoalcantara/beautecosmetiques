@@ -1,38 +1,83 @@
 [
     {
-      "imgSrc": "img/perfum1.webp",
-      "alt": "Perfume Malbec",
-      "title": "MALBEC",
-      "description": "Mergulhe na fragrância amadeirada e fresca de Malbec Ultra Bleu, a versão mais intensa de Malbec Bleu.",
-      "price": "R$ 179,90",
-      "installments": "8X de R$ 22,49",
-      "buttonText": "Compre Agora ❯"
-    },
-    {
-      "imgSrc": "img/perfum4.webp",
-      "alt": "Perfume Coffee Man",
-      "title": "COFFEE MAN",
-      "description": "Com a inesquecível fragrância Amadeirado Fougére, o Coffee Man Duo é perfeito para homens sedutores.",
-      "price": "R$ 194,90",
-      "installments": "9X de R$ 21,66",
-      "buttonText": "Compre Agora ❯"
-    },
-    {
-      "imgSrc": "img/perfum7.webp",
-      "alt": "Perfume Zaad",
-      "title": "ZAAD",
+      "imgSrc": "img/kit1.webp",
+      "alt": "Kit dia das Mães",
+      "title": "KIT FLORATTA",
+      "subtitle": "Kit Presente Dia das Mães Red (3 itens)",
       "description": "Kit com os grandes sucessos de Floratta Red em itens que fazem toda a diferença no dia a dia de autocuidado.",
-      "price": "R$ 299,90",
-      "installments": "10X de R$ 29,99",
-      "buttonText": "Compre Agora ❯"
+      "price": "R$ 229,90",
+      "parcela": "10X de R$ 22,99",
+      "gender": "feminino"
     },
     {
-      "imgSrc": "img/perfum3.webp",
-      "alt": "Perfume 214",
-      "title": "BOTICA 214",
-      "description": "Sinta fragrância refrescante e moderna de Botica 214 Dark Mint Eau De Parfum em todos os momentos especiais.",
-      "price": "R$ 204,90",
-      "installments": "10X de R$ 20,49",
-      "buttonText": "Compre Agora ❯"
-    }
-  ]
+      "imgSrc": "img/perfum5.webp",
+      "alt": "Perfume Liz",
+      "title": "LIZ",
+      "subtitle": "Desodorante Colônia 100ml",
+      "description": "Conheça Liz, desodorante feminino amadeirada floral inspirada na sensualidade e na força da mulher.",
+      "price": "R$ 149,90",
+      "parcela": "7X de R$ 21,41",
+      "gender": "feminino"
+    },
+    {
+      "imgSrc": "img/creme1.webp",
+      "alt": "Creme Lily",
+      "title": "LILY",
+      "subtitle": "Creme Acetinado Hidratante 250g",
+      "description": "O creme acetinado Lily Lumière proporciona hidratação, toque aveludado e fragrância marcante e sofisticada.",
+      "price": "R$ 116,90",
+      "parcela": "5X de R$ 23,38",
+      "gender": "feminino"
+    },
+    {
+      "imgSrc": "img/perfum6.webp",
+      "alt": "Perfume Coffee",
+      "title": "COFFEE",
+      "subtitle": "Woman Seduction Colônia 100ml",
+      "description": "O Coffee Woman Seduction Desodorante Colônia entrega uma fragrância sensual e irresistível para seus dias.",
+      "price": "R$ 194,90",
+      "parcela": "9X de R$ 21,66",
+      "gender": "feminino"
+    }, 
+  {
+    "imgSrc": "img/perfum1.webp",
+    "alt": "Perfume Malbec",
+    "title": "MALBEC",
+    "subtitle": "Arctic Eau de Parfum 95ml",
+    "description": "Mergulhe na fragrância amadeirada e fresca de Malbec Ultra Bleu, a versão mais intensa de Malbec Bleu.",
+    "price": "R$ 179,90",
+    "parcela": "8X de R$ 22,49",
+    "gender": "masculino"
+  },
+  {
+    "imgSrc": "img/perfum4.webp",
+    "alt": "Perfume Coffee Man",
+    "title": "COFFEE MAN",
+    "subtitle": "Arctic Eau de Parfum 95ml",
+    "description": "Com a inesquecível fragrância Amadeirado Fougére, o Coffee Man Duo é perfeito para homens sedutores.",
+    "price": "R$ 194,90",
+    "parcela": "9X de R$ 21,66",
+    "gender": "masculino"
+  },
+  {
+    "imgSrc": "img/perfum7.webp",
+    "alt": "Perfume Zaad",
+    "title": "ZAAD",
+    "subtitle": "Arctic Eau de Parfum 95ml",
+    "description": "Único, Zaad Artic combina o frescor do acordo água glacial, em contraste com notas quentes de madeira.",
+    "price": "R$ 299,90",
+    "parcela": "10X de R$ 29,99",
+    "gender": "masculino"
+  },
+  {
+    "imgSrc": "img/perfum3.webp",
+    "alt": "Perfume 214",
+    "title": "BOTICA 214",
+    "subtitle": "Arctic Eau de Parfum 95ml",
+    "description": "Sinta fragrância refrescante e moderna de Botica 214 Dark Mint Eau De Parfum em todos os momentos especiais.",
+    "price": "R$ 204,90",
+    "parcela": "10X de R$ 20,49",
+    "gender": "masculino"
+  }
+  
+]
