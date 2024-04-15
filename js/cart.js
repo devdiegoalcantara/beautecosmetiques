@@ -147,7 +147,7 @@ function updateTotal() {
         total = total + price * quantity;
     }
 
-        document.getElementsByClassName('total-price')[0].innerText = 'R$' + total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    
+    document.getElementsByClassName('total-price')[0].innerText = 'R$' + total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
 }
 
