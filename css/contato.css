@@ -17,6 +17,7 @@
     font-family: var(--fonte-principal);
     margin-left: 0.5em;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 .contato__texto {

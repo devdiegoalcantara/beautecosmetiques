@@ -283,6 +283,7 @@
 .opções__item:hover .lista-menu {
     display: block;
     z-index: 1001;
+    transition: opacity 0.3s ease;
 }
 
 .sub-menu-2 {
