@@ -6,6 +6,7 @@ hr {
     background-color: var(--rosa);
     padding: 1em;
     display: none;
+    font-family: var(--fonte-cards);
 }
 
 .creditos {
@@ -14,6 +15,7 @@ hr {
     justify-content: center;
     padding: 5px;
     text-align: center;
+    font-family: var(--fonte-cards);
 }
 .creditos img {
     padding: 16px;
@@ -23,6 +25,7 @@ hr {
     background-color: var(--verde-claro);
     text-align: center;
     color: white;
+    font-family: var(--fonte-cards);
 }
 
 @media screen and (min-width: 1024px) {
@@ -50,6 +53,7 @@ hr {
     .lista-rodapé__titulo {
         font-size: 14px;
         color: var(--cinza-claro);
+        font-family: var(--fonte-principal);
     }
 
     .rodapé__titulo {

@@ -4,6 +4,7 @@
     height: 4em;
     margin: 1em 1em;
     display: none;
+    font-family: var(--fonte-principal);
 }
 
 .banner__titulo {

@@ -72,7 +72,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 445px;
+    width: 365px;
     max-height: 100vh;
     min-height: 100vh;
     padding: 20px;
@@ -195,6 +195,7 @@
     position: absolute;
     top: 100%;
     width: 60vw;
+    font-family: var(--fonte-principal);
 }
 
 .container__botao:checked~.lista-menu {
@@ -231,6 +232,7 @@
 }
 
 .container__texto {
+    font-family: var(--fonte-principal);
     display: none;
 }
 
@@ -314,8 +316,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 1em;
-    min-width: 560px;
-    margin-left: -1.9em;
+    min-width: 400px;
+    
 
 }
 

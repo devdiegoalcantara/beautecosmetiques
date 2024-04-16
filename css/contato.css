@@ -14,6 +14,9 @@
 .contato__titulo {
     font-size: 18px;
     font-weight: 500;
+    font-family: var(--fonte-principal);
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .contato__texto {
@@ -44,7 +47,9 @@
     }
 
     .contato__titulo {
-        font-size: 24px;
+        font-size: 22px;
+        font-family: var(--fonte-principal);
+        text-align: center;
     }
 
     .contato__email {
