@@ -7,8 +7,8 @@
 
 > Responsivo:
 
-<p>
-<img src="./img/beauteresponsivo.gif" align="center" width="200px">
+<p align="center">
+<img src="./img/beauteresponsivo.gif" width="300px">
 </p>
 
 > Descrição
