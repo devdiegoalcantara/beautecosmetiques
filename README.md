@@ -7,7 +7,7 @@
 
 > Responsivo:
 
-<p align="center">
+<p>
 <img src="./img/beauteresponsivo.gif" align="center" width="200px">
 </p>
 
