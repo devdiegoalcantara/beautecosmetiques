@@ -1,6 +1,6 @@
 # Beauté Cosmétiques
 
-<img src="./img/beaute.gif">  <img src="./img/beauteresposivo.gif">
+<img src="./img/beaute.gif">  <img src="./img/beauteresponsivo.gif">
 
 > Descrição
 
