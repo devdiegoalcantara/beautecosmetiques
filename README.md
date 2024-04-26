@@ -1,6 +1,6 @@
 # Beauté Cosmétiques
 
-<img src="./src/assets/gestao-nlw.gif">
+<img src="./img/beaute.gif">  <img src="./img/beauteresposivo.gif">
 
 > Descrição
 
