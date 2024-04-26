@@ -1,6 +1,15 @@
 # Beauté Cosmétiques
 
-<img src="./img/beaute.gif">  <img src="./img/beauteresponsivo.gif">
+> Uma pequena amostra do site: 
+<p align="center">
+<img src="./img/beaute.gif">
+</p> 
+
+> Responsivo:
+
+<p align="center">
+<img src="./img/beauteresponsivo.gif" align="center" width="200px">
+</p>
 
 > Descrição
 
