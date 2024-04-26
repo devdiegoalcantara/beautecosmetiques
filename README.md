@@ -33,7 +33,7 @@ Aqui estão algumas das tecnologias e abordagens que utilizamos para superar ess
 Estou incrivelmente orgulhoso do resultado final deste projeto e confiante de que criei uma plataforma robusta, moderna e visualmente atraente para o esse e-commerce de cosméticos. 
 Mal possos esperar para compartilhar essa experiência com nossos clientes e ver como ela transforma suas jornadas de compra.
 
-[🔗 Clique aqui para acessar o projeto](https://devdiegoalcantara.github.io/beautecosmetiques/)
+[🔗 Clique aqui para acessar o projeto](https://devdiegoalcantara.github.io/beautecosmetiques/){:target="_blank" rel="noopener"}
 
 ## 🛠️ Tecnologias
 
