@@ -22,8 +22,7 @@ intuitiva e segura para os amantes de cosméticos em todo o mundo.
 
 - Carrossel de Anúncios: Implementamos um carrossel dinâmico, funcional e atrativo, destacando nossos produtos mais populares,
   lançamentos e ofertas especiais. Isso permite que os usuários sejam imediatamente cativados pela diversidade e qualidade de nossa linha de cosméticos.
-- Sistema de Carrinho de Compras Intuitivo: Desenvolvemos um sistema de carrinho de compras que é tanto simples quanto eficiente. Os usuários podem adicionar,
-  remover e editar itens em seu carrinho com facilidade, vendo a atualização do valor total bem como a possibilidade alterar a quantidade dos produtos, garantindo uma experiência de compra sem complicações.
+- Sistema de Carrinho de Compras Intuitivo: Desenvolvemos um sistema de carrinho de compras que é tanto simples quanto eficiente. O usuário pode adicionar, remover e editar itens em seu carrinho com facilidade, com a atualização do valor total em tempo real, bem como a possibilidade de alterar a quantidade do produto, garantindo uma experiência de compra sem complicações.
 
 
 ## Tecnologias e Desafios:
@@ -40,7 +39,7 @@ Aqui estão algumas das tecnologias e abordagens que utilizamos para superar ess
 ## Considerações
 
 Estou incrivelmente orgulhoso do resultado final deste projeto e confiante de que criei uma plataforma robusta, moderna e visualmente atraente para o esse e-commerce de cosméticos. 
-Mal possos esperar para compartilhar essa experiência com nossos clientes e ver como ela transforma suas jornadas de compra.
+Mal possos esperar para compartilhar essa experiência com nossos clientes e ver como ela transforma sua jornada de compras.
 
 [🔗 Clique aqui para acessar o projeto](https://devdiegoalcantara.github.io/beautecosmetiques/)
 
