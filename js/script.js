@@ -12,6 +12,7 @@ formulario.addEventListener("submit", (e) => {
         "rg": e.target.elements["rg"].value,
         "cpf": e.target.elements["cpf"].value,
         "aniversario": e.target.elements["aniversario"].value,
+        "password": e.target.elements["password"].value,
     }
 
     localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
@@ -60,6 +61,15 @@ const mensagens = {
     },
     termos: {
         valueMissing: 'Você deve aceitar nossos termos antes de continuar.',
+    },
+    password: {
+        valueMissing: 'O campo de senha não pode estar vazio.',
+        patternMismatch: "Por favor, preencha uma senha válida.",
+        tooShort: "O campo da senha não tem caractéres suficientes."
+    },
+    confirmPassword: {
+        valueMissing: 'O campo de confirmação da senha não pode estar vazio.',
+        customError: 'As senhas não coincidem.'
     }
 }
 
@@ -71,6 +81,12 @@ function verificaCampo(campo) {
     }
     if (campo.name == "aniversario" && campo.value != "") {
         ehMaiorDeIdade(campo);
+    }
+    if (campo.name === "confirmPassword") {
+        const password = document.getElementById('password').value;
+        if (campo.value !== password) {
+            campo.setCustomValidity('As senhas não coincidem.');
+        }
     }
     tiposDeErro.forEach(erro => {
         if (campo.validity[erro]) {

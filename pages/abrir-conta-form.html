@@ -118,6 +118,18 @@
                         required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="password">Senha</label>
+                    <input name="password" id="password" class="campo__escrita campo__escrita--menor" required type="password"
+                        minlength="6" maxlength="12"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="confirmPassword">Confirmar Senha</label>
+                    <input name="confirmPassword" id="confirmPassword" class="campo__escrita campo__escrita--menor" required type="password"
+                        minlength="6" maxlength="12"/>
+                        <span class="mensagem-erro"></span>
+                </fieldset>
                 <fieldset class="formulario__termos">
                     <input name="termos" class="termos__input" type="checkbox" required>
                     <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
@@ -225,23 +237,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/cart.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: true,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                type: 'bullets',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
 </body>
 
 </html>

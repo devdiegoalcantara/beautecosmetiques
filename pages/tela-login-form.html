@@ -74,9 +74,6 @@
                 <p class="container__texto">Minha Conta</p>
             </a>
     </header>
-
-    
-
     <div>
         <ul class="breadcrumb">
             <a href="../index.html"><li>Inicio</li></a>
@@ -85,26 +82,57 @@
         </ul>
     </div>
 
+    <main class="container">
         <section class="formulario">
             <div class="formulario__container">
-                <img src="../img/status-3.png" alt="Etapa três de três" class="formulario__etapas">
-                <h2 class="formulario__titulo-texto">Parabéns, Tudo certo!</h2>
-
-                <img src="../img/festejo.svg" alt="Ícone de celebração" class="formulario__imagem" style="width: 22rem;">
-
-                <p class="formulario__texto-secundario">A conta já está criada e você vai receber
-                    todos os dados dela por email.
-                    <b class="formulario__texto--negrito">Confirme o link</b> enviado por lá para começar a usar sua
-                    conta agora mesmo!
-                </p>
-
-                <p class="formulario__texto-secundario">Se quiser baixar nosso aplicativo, escaneie o
-                    código QR abaixo com a câmera
-                    do seu celular!</p>
-
-                <img src="../img/Codigo QR.png" alt="Código QR" class="formulario__imagem">
-
+                <img src="../img/status-1.png" alt="Etapa um de três" class="formulario__etapas">
+                <h2 class="formulario__titulo-texto">Preencha os campos abaixo para criar sua conta!</h2>
             </div>
+
+            <form class="principal__formulario" data-formulario>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nome">Nome</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="email">E-mail</label>
+                    <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">RG</label>
+                    <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" type="text" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
+                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
+                        minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
+                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date"
+                        required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__termos">
+                    <input name="termos" class="termos__input" type="checkbox" required>
+                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                        descrito na Política
+                        de
+                        Privacidade do Site.</p>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <div>
+                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+
         </section>
 
     </main>
@@ -196,7 +224,6 @@
     <script src="../js/script.js" type="module"></script>
     <script src="../js/main.js"></script>
     <script src="../js/cart.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
+    </body>
 
 </html>
