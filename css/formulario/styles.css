@@ -1,0 +1,39 @@
+@import url('./header.css');
+@import url('../banner.css');
+@import url("./topicos.css");
+@import url("./contato.css");
+@font-face {
+    font-family: Balistic;
+    src: url('../fonts/Ballistic\ Script.ttf');
+}
+
+:root {
+    --fonte-logo: 'Inter', sans-serif;
+    --azul-claro: #6BD1FF;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --rosa: #fcd0cc;
+    --cor-de-fundo: #ebecee;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-tema: "Balistic", Sans-serif;
+    --fonte-principal: "Poppins", Sans-serif;
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans", sans-serif;
+    --preto: #000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    --verde-claro:#01a66e;
+    --rosa-claro: #ff85b2;
+    --fonte-cards: "Dm Sans", Sans-Serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 16px;
+}
+
+.cabecalho__logo-link {
+    text-decoration: none;
+}
