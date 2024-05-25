@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoniBank - Página inicial</title>
+    <title>Beaute Cosmétiques - Conta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,52 +14,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
         integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/formulario/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/formulario/styles.css">
+    <link rel="stylesheet" href="../css/formulario/main.css">
 </head>
 
 <body>
+    <div class="promocao"> <img class="imagem__promocao" src="../img/delivery-64.png" alt="delivery-truck">Frete GRÁTIS
+        para todo o Brasil! </div>
+
     <header class="cabecalho">
-        <a href='../index.html' class="cabecalho__logo-link">
-            <h1 class="cabecalho__logo-inicio">Moni<span class="cabecalho__logo-final">Bank</span></h1>
-        </a>
-        <ul class="cabecalho-lista">
-            <li class="cabecalho-lista__item">
-                <a href="#" class="cabecalho-lista__link">Sobre</a>
-            </li>
-            <li class="cabecalho-lista__item">
-                <a href="#" class="cabecalho-lista__link">Serviços</a>
-            </li>
-            <li class="cabecalho-lista__item">
-                <input class="cabecalho__pesquisa" type="search" placeholder="Busque aqui">
-            </li>
-            <li class="cabecalho-lista__item">
-                <a href="./abrir-conta-form.html"
-                    class="cabecalho-lista__item-botao cabecalho-lista__item-botao--azul">Abrir conta</a>
-            </li>
-            <li class="cabecalho-lista__item">
-                <a href="#" class="cabecalho-lista__item-botao">Acessar conta</a>
-            </li>
-        </ul>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Promoções</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Perfumaria</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Corpo e Banho</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Make</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">SkinCare</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Cabelos</a></li>
+            </ul>
+            <a href="../index.html"><img src="../img/logobeaute.png" alt="Logo da Beaute" class="container__imagem__logo"></a>
+            <a href="../index.html">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">BeautéCosmétiques</b></h1>
+            </a>
+        </div>
+        <input type="search" class="banner__pesquisa" placeholder="O que você procura hoje?">
+        <button type="submit" class="btn-search">
+            <a href="#"><img class="icon-search "
+                    src="https://res.cloudinary.com/beleza-na-web/image/upload/f_svg,fl_progressive,q_auto:eco/v1/blz/assets-store/0.0.448/images/icons/search-white.svg"
+                    alt="Ícone de lupa" width="20" height="20"></a>
+        </button>
+        <div class="container">
+            <a href="#"><img src="../img/Favoritos.svg" alt="Meus Favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link" id="cart-icon">
+                <img src="../img/Compras.svg" alt="Carrinho de Compras" class="container__imagem">
+                <p class="container__texto">Sacola</p>
+            </a>
+            <a href="../pages/abrir-conta-form.html" class="container__link">
+                <img src="../img/Usuario.svg" alt="Meu Perfil" class="container__imagem">
+                <p class="container__texto">Minha Conta</p>
+            </a>
     </header>
 
-    <section class="banner">
-        <h3 class="banner__titulo">Moniconta é o primeiro passo para a liberdade financeira!</h3>
+    <section class="carrossel" >
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="../img/carrossel1.webp" alt="Propaganda Cosmeticos"></div>
+                    <div class="swiper-slide"><img src="../img/carrossel2.webp" alt="Propaganda Cosmeticos"></div>
+                    <div class="swiper-slide"><img src="../img/carrossel3.webp" alt="Propaganda Cosmeticos"></div>
+                    <div class="swiper-slide"><img src="../img/carrossel4.webp" alt="Propaganda Cosmeticos"></div>
+                    <div class="swiper-slide"><img src="../img/carrossel5.jpg" alt="Propaganda Cosmeticos"></div>
+                    <div class="swiper-slide"><img src="../img/carrossel6.webp" alt="Propaganda Cosmeticos"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
     </section>
 
-    <main class="container">
+    <div>
         <ul class="breadcrumb">
-            <li>Inicio</li>
-            <li class="breadcrumb__pagina">Abrir conta</li>
+            <a href="../index.html"><li>Inicio</li></a>
+            <li> > Minha conta</li>
+            <li class="breadcrumb__pagina"> > Criar Conta</li>
         </ul>
-
+    </div>
 
         <section class="formulario">
             <div class="formulario__container">
                 <img src="../img/status-3.png" alt="Etapa três de três" class="formulario__etapas">
-                <h2 class="formulario__titulo-texto">Tudo certo!</h2>
+                <h2 class="formulario__titulo-texto">Parabéns, Tudo certo!</h2>
 
-                <img src="../img/Ícone celebração.png" alt="Ícone de celebração" class="formulario__imagem">
+                <img src="../img/festejo.svg" alt="Ícone de celebração" class="formulario__imagem" style="width: 22rem;">
 
                 <p class="formulario__texto-secundario">A conta já está criada e você vai receber
                     todos os dados dela por email.
@@ -71,67 +125,118 @@
                     código QR abaixo com a câmera
                     do seu celular!</p>
 
-                <img src="../img/Código CQ.png" alt="Código QR" class="formulario__imagem">
+                <img src="../img/Codigo QR.png" alt="Código QR" class="formulario__imagem">
 
             </div>
         </section>
 
     </main>
 
-    <footer class="rodape">
-        <section class="rodape__empresa">
-            <h2 class="rodape__titulo">O MoniBank</h2>
-            <ul class="rodape__lista">
-                <li>
-                    <a href="#" class="rodape__link">Sobre</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">Perguntas frequentes</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">Carreira</a>
-                </li>
-            </ul>
-        </section>
-        <section class="rodape__servicos">
-            <h2 class="rodape__titulo">Serviços</h2>
-            <ul class="rodape__lista">
-                <li>
-                    <a href="#" class="rodape__link">Conta corrente</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">Conta PJ</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">Cartão de crédito</a>
-                </li>
-            </ul>
-        </section>
-        <section class="rodape__contato">
-            <h2 class="rodape__titulo">Contato</h2>
-            <ul class="rodape__lista">
-                <li>
-                    <a href="#" class="rodape__link">0800 004 250 08</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">meajuda@monibank.com.br</a>
-                </li>
-                <li>
-                    <a href="#" class="rodape__link">ouvidoria@monibank.com.br</a>
-                </li>
-            </ul>
-        </section>
-        <section class="rodape__redes-sociais">
-            <h2 class="rodape__titulo">Acesse nossas redes</h2>
-            <ul class="rodape__lista redes-sociais__lista">
-                <li><img src="../img/Facebook.png" alt="ícone do facebook"></li>
-                <li><img src="../img/Youtube.png" alt="ícone do youtube"></li>
-                <li><img src="../img/Whatsapp.png" alt="ícone do whatsapp"></li>
-                <li><img src="../img/Instagram.png" alt="ícone do instagram"></li>
-            </ul>
-            <h2 class="rodape__logo"><span class="rodape__logo--negrito">Moni</span>Bank</h2>
-        </section>
+    <footer class="rodapé">
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">DÚVIDAS FREQUENTES</li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Formas de Pagamento</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Frete e Entrega</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Troca e Devolução</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">INSTITUCIONAL</li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Nossa História</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">o Grupo</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Trabalhe Conosco</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Seja um Revendedor</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Clube</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Cashback</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">SUPORTE</li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Relacionamento com o Cliente</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Política de Privacidade</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Proteja-se Contra Fraudes</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Preferências de Cookies</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Código de defesa do consumidor</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Termos de Uso</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Nossas lojas</a>
+            </li>
+        </ul>
     </footer>
+    <footer class="main">
+        <div class="creditos">
+            <div>
+                <ul>
+                    <li>PAGAMENTO
+                    </li>
+                    <img src="../img/rodapé1.webp" alt="Cartões Aceitos">
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>SEGURANÇA
+                    </li>
+                    <img src="../img/rodapé2.webp" alt="Niveis de Segurança">
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+    <div class="desenvolvedor">
+        <h2>Desenvolvido por Diego Soares de Alcântara Costa</h2>
+    </div>
+    <script src="../js/script.js" type="module"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: true,
+            spaceBetween: 0,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
