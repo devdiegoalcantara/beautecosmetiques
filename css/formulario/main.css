@@ -66,7 +66,7 @@
 
 .campo__escrita {
     display: block;
-    border: 2px solid var(--azul-claro);
+    border: 2px solid var(--verde-claro);
     border-radius: 20px;
     width: 100%;
     padding: 1em;
@@ -85,6 +85,8 @@
 
 .formulario__botao,
 .camera__botao {
+    margin: 2em auto;
+    display: block;
     background-color: var(--rosa-claro);
     color: #fff;
     font-weight: bold;
@@ -92,13 +94,12 @@
     font-size: 16px;
     font-family: var(--fonte-card);
     border: none;
-    width: 50%;
-    padding: 12px;
-    margin: 1rem;
+    padding: 1em 4em;
+    margin-top: 16px;
     box-shadow: var(--rosa-claro) 1.95px 1.95px 2.6px;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
 
 .formulario__imagem {
