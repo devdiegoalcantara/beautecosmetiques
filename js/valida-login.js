@@ -9,7 +9,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 
     if (dadosCadastro && dadosCadastro.email === email && dadosCadastro.password === password) {
         const nome = dadosCadastro.nome.split(' ')[0];
-        alert(`Olá! Que bom que você voltou. ${nome}`);
+        alert(`Olá! Que bom que você voltou ${nome}.`);
       window.location.href = "../index.html";
     } else {
       document.getElementById("login-message").textContent = "E-mail ou senha inválidos. Por favor, tente novamente.";
