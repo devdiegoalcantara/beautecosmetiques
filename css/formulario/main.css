@@ -113,7 +113,7 @@
 .formulario__imagem {
     display: block;
     margin: 2em auto;
-    width: 20vw;
+    width: 20rem;
 }
 
 .formulario__imagem--invisivel {
@@ -126,7 +126,7 @@
 }
 
 .formulario__texto {
-    margin: 1em 8em;
+    margin: 1em 4em;
 }
 
 .formulario__texto--negrito {
@@ -260,7 +260,7 @@
         text-decoration: none;
     }
     .formulario__imagem {
-        width: 15rem;
+        width: 12rem;
     }
 
     
