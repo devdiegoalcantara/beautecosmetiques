@@ -42,6 +42,10 @@
 .breadcrumb__pagina {
     font-weight: 700;
 }
+.login {
+    text-align: center;
+    display: flex;
+}
 
 .formulario__container {
     margin: 3em 0;
@@ -145,10 +149,18 @@
 .formulario__camera--exibir {
     display: block;
 }
-
+#login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
 @media screen and (max-width: 900px) {
     .formulario {
-        width: 70%;
+        width: 80%;
     }
 
     .formulario__etapas {

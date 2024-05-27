@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beaute Cosmétiques - Conta</title>
+    <title>Beaute Cosmétiques - login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -51,7 +51,8 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">SkinCare</a></li>
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Cabelos</a></li>
             </ul>
-            <a href="../index.html"><img src="../img/logobeaute.png" alt="Logo da Beaute" class="container__imagem__logo"></a>
+            <a href="../index.html"><img src="../img/logobeaute.png" alt="Logo da Beaute"
+                    class="container__imagem__logo"></a>
             <a href="../index.html">
                 <h1 class="container__titulo"><b class="container__titulo--negrito">BeautéCosmétiques</b></h1>
             </a>
@@ -76,65 +77,56 @@
     </header>
     <div>
         <ul class="breadcrumb">
-            <a href="../index.html"><li>Inicio</li></a>
-            <li> > Minha conta</li>
-            <li class="breadcrumb__pagina"> > Criar Conta</li>
+            <a href="../index.html">
+                <li>Inicio</li>
+            </a>
+            <li class="breadcrumb__pagina"> > Minha conta</li>
         </ul>
     </div>
 
     <main class="container">
-        <section class="formulario">
+        <section class="formulario" id="login">
             <div class="formulario__container">
-                <img src="../img/status-1.png" alt="Etapa um de três" class="formulario__etapas">
-                <h2 class="formulario__titulo-texto">Preencha os campos abaixo para criar sua conta!</h2>
-            </div>
-
-            <form class="principal__formulario" data-formulario>
-                <fieldset class="formulario__campo">
-                    <label class="campo__etiqueta" for="nome">Nome</label>
-                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required />
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-
-                <fieldset class="formulario__campo">
-                    <label class="campo__etiqueta" for="email">E-mail</label>
-                    <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-                <fieldset class="formulario__campo">
-                    <label class="campo__etiqueta" for="rg">RG</label>
-                    <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" type="text" required />
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-                <fieldset class="formulario__campo">
-                    <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
-                        minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-                <fieldset class="formulario__campo">
-                    <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
-                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date"
-                        required />
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-                <fieldset class="formulario__termos">
-                    <input name="termos" class="termos__input" type="checkbox" required>
-                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
-                        descrito na Política
-                        de
-                        Privacidade do Site.</p>
-                    <span class="mensagem-erro"></span>
-                </fieldset>
-
                 <div>
-                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
-                    <span class="mensagem-erro"></span>
+                    <span>Olá!</span>
+                    <span>Para continuar, digite seu e-mail</span>
+                    <form novalidate="">
+                        <div>
+                            <div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input class="campo__escrita" id="email" required placeholder="Email:" name="email"
+                                           type="email" autocomplete="off" location="login" value="" aria-required="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" location="login">Esqueci meu e-mail</a>
+                        </div>
+                        <button type="submit" location="login" class="formulario__botao">Continuar</button>
+                    </form>
+                    <div>
+                        <div></div>
+                        <span>ou utilize sua conta</span>
+                    </div>
+                    <div>
+                        <button location="login">
+                            <span data-testid="ButtonLeftIcon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 25" width="25px">
+                                    <path d="M5.21324 12.699C5.21324 11.919 5.34415 11.1718 5.57324 10.4736L1.53691 7.38635C0.746013 8.98452 0.304199 10.7845 0.304199 12.699C0.304199 14.6136 0.746013 16.4135 1.53691 18.0172L5.57324 14.9299C5.34415 14.2263 5.21324 13.479 5.21324 12.699Z" fill="#FBBC05"></path>
+                                    <path d="M1.53699 7.38097L5.57331 10.4682C6.50603 7.64278 9.15691 5.60826 12.3041 5.60826C13.995 5.60826 15.5223 6.20825 16.7223 7.19006L20.2132 3.69919C18.0859 1.84466 15.3587 0.699219 12.3041 0.699219C7.5642 0.699219 3.48424 3.41555 1.53699 7.38097Z" fill="#EA4335"></path>
+                                    <path d="M12.3042 10.5176V15.1539H18.7405C18.1405 18.0993 15.6315 19.7902 12.3042 19.7902C9.15154 19.7902 6.4952 17.7502 5.56794 14.9194L1.53162 18.012C3.48432 21.9829 7.55883 24.6992 12.3042 24.6992C18.3042 24.6992 23.7587 20.3357 23.7587 12.6994C23.7587 11.9903 23.6496 11.2267 23.4859 10.5176H12.3042Z" fill="#34A853"></path>
+                                    <path d="M12.3041 10.5176V15.1539H18.7404C18.4186 16.7357 17.5404 17.952 16.2913 18.7429L20.1258 21.7102C22.324 19.6593 23.7585 16.6102 23.7585 12.6994C23.7585 11.9903 23.6494 11.2267 23.4858 10.5176H12.3041Z" fill="#4285F4"></path>
+                                </svg>
+                            </span>
+                            <span>Google</span>
+                        </button>
+                    </div>
+                    <span>Protegido por reCAPTCHA - <a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=pt-BR">Privacidade</a> | <a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms?hl=pt-BR">Condições</a></span>
                 </div>
-            </form>
-
+            </div>
         </section>
-
+        
     </main>
 
     <footer class="rodapé">
@@ -223,7 +215,7 @@
     </div>
     <script src="../js/script.js" type="module"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/cart.js"></script> 
-    </body>
+    <script src="../js/cart.js"></script>
+</body>
 
 </html>
