@@ -22,7 +22,7 @@
 
 .formulario {
     margin: 1em auto;
-    width: 30vw;
+    width: 50vw;
 }
 
 .breadcrumb {
@@ -133,7 +133,7 @@
 }
 
 .formulario__texto-secundario {
-    margin: 2em 6em;
+    margin: 2em 2em;
 }
 
 .mensagem-erro {
@@ -249,13 +249,8 @@
     }
 
     .formulario__etapas {
-        width: 100%;
+        width: 70%;
     }
-
-    .formulario__texto {
-        margin: 0;
-    }
-
     .formulario {
         margin: 2em;
     }
@@ -263,4 +258,9 @@
     .breadcrumb {
         text-decoration: none;
     }
+    .formulario__imagem {
+        width: 15rem;
+    }
+
+    
 }
