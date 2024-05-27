@@ -24,24 +24,28 @@
     margin: 1em auto;
     width: 30vw;
 }
+
 .breadcrumb {
     margin: 1rem;
     text-decoration: none;
     text-align: center;
 }
+
 .breadcrumb a {
     text-decoration: none;
 }
+
 .breadcrumb li {
     display: inline;
     font-size: 20px;
     color: var(--rosa-claro);
-    
+
 }
 
 .breadcrumb__pagina {
     font-weight: 700;
 }
+
 .login {
     text-align: center;
     display: flex;
@@ -149,15 +153,89 @@
 .formulario__camera--exibir {
     display: block;
 }
+
 #login {
     background-color: #fff;
     padding: 20px;
+    border: 1px solid lightgray;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
     width: 100%;
 }
+
+#email__login, #password__login {
+    padding: 1em 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1.5em 0;
+}
+#email__login::placeholder, #password__login::placeholder {
+    padding-left: 10px;
+
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.signup-link {
+    font-weight: bold;
+    color: var(--rosa-claro)
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+#esqueci:hover {
+    text-decoration: underline 2px;
+    text-decoration-color: var(--verde-claro);
+    text-underline-offset: 4px;
+}
+
+#button__google {
+    margin: 2em auto;
+    display: block;
+    background-color: lightgray;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--fonte-card);
+    border: none;
+    padding: 1em 4em;
+    margin-top: 16px;
+    box-shadow: lightgray 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px;
+}
+
+#line {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 900px) {
     .formulario {
         width: 80%;
@@ -174,6 +252,7 @@
     .container {
         margin: 2em;
     }
+
     .breadcrumb {
         text-decoration: none;
     }

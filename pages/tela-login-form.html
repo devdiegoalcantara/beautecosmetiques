@@ -88,29 +88,33 @@
         <section class="formulario" id="login">
             <div class="formulario__container">
                 <div>
-                    <span>Olá!</span>
-                    <span>Para continuar, digite seu e-mail</span>
+                    <span class="greeting">Olá, tudo bem?</span>
+                    <span>Para continuar, digite seu e-mail e senha</span>
                     <form novalidate="">
                         <div>
                             <div>
                                 <div>
-                                    <label for="email">Email:</label>
-                                    <input class="campo__escrita" id="email" required placeholder="Email:" name="email"
+                                    <input class="campo__escrita" id="email__login" required placeholder="Email:" name="email"
                                            type="email" autocomplete="off" location="login" value="" aria-required="true">
+                                </div>
+                                <div>
+                                    <input class="campo__escrita" id="password__login" required placeholder="Senha:" name="password"
+                                           type="password" autocomplete="off" location="password" value="" aria-required="true">
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <a href="#" location="login">Esqueci meu e-mail</a>
+                            <a href="#" location="login" id="esqueci">Esqueci minha senha</a>
                         </div>
                         <button type="submit" location="login" class="formulario__botao">Continuar</button>
                     </form>
-                    <div>
-                        <div></div>
+                    <div class="line-container">
+                        <span class="line"></span>
                         <span>ou utilize sua conta</span>
+                        <span class="line"></span>
                     </div>
                     <div>
-                        <button location="login">
+                        <button location="login" id="button__google">
                             <span data-testid="ButtonLeftIcon" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 25" width="25px">
                                     <path d="M5.21324 12.699C5.21324 11.919 5.34415 11.1718 5.57324 10.4736L1.53691 7.38635C0.746013 8.98452 0.304199 10.7845 0.304199 12.699C0.304199 14.6136 0.746013 16.4135 1.53691 18.0172L5.57324 14.9299C5.34415 14.2263 5.21324 13.479 5.21324 12.699Z" fill="#FBBC05"></path>
@@ -122,7 +126,7 @@
                             <span>Google</span>
                         </button>
                     </div>
-                    <span>Protegido por reCAPTCHA - <a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=pt-BR">Privacidade</a> | <a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms?hl=pt-BR">Condições</a></span>
+                    <span>Novo por aqui? - <a class="signup-link" target="_blank" rel="noopener noreferrer" href="#">Cadastre-se grátis!</a>
                 </div>
             </div>
         </section>
