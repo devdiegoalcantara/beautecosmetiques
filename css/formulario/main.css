@@ -194,12 +194,19 @@
     text-decoration: underline;
 }
 
-
+#esqueci {
+    text-decoration: none;
+    color: black;
+}
 #esqueci:hover {
     text-decoration: underline 2px;
     text-decoration-color: var(--verde-claro);
     text-underline-offset: 4px;
 }
+#login-message {
+    color: red;
+    padding-bottom: 10px;
+  }
 
 #button__google {
     margin: 2em auto;
@@ -249,7 +256,7 @@
         margin: 0;
     }
 
-    .container {
+    .formulario {
         margin: 2em;
     }
 

@@ -6,14 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beaute Cosmétiques - login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
-        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -90,7 +82,7 @@
                 <div>
                     <span class="greeting">Olá, tudo bem?</span>
                     <span>Para continuar, digite seu e-mail e senha</span>
-                    <form novalidate="">
+                    <form id="login-form">
                         <div>
                             <div>
                                 <div>
@@ -101,12 +93,13 @@
                                     <input class="campo__escrita" id="password__login" required placeholder="Senha:" name="password"
                                            type="password" autocomplete="off" location="password" value="" aria-required="true">
                                 </div>
+                                    <p id="login-message"></p>
                             </div>
                         </div>
                         <div>
-                            <a href="#" location="login" id="esqueci">Esqueci minha senha</a>
+                            <a href="#" id="esqueci">Esqueci minha senha</a>
                         </div>
-                        <button type="submit" location="login" class="formulario__botao">Continuar</button>
+                        <button type="submit" class="formulario__botao">Continuar</button>
                     </form>
                     <div class="line-container">
                         <span class="line"></span>
@@ -220,6 +213,7 @@
     <script src="../js/script.js" type="module"></script>
     <script src="../js/main.js"></script>
     <script src="../js/cart.js"></script>
+    <script src="../js/valida-login.js"></script>
 </body>
 
 </html>
