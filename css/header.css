@@ -253,7 +253,7 @@
 
 .lista-menu__item:hover>.lista-menu__link {
     -webkit-text-fill-color: var(--branco);
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 
@@ -266,7 +266,7 @@
     box-shadow: 1px 1px 1px black;
     position: absolute;
     z-index: 1111;
-    margin-top:0%;
+    margin-top: 0%;
 }
 
 .lista-menu__item {
@@ -415,8 +415,17 @@
 .cards .favoritar:hover {
     color: #ff0000;
 }
+
 .opções__item {
-    position: relative; /* Define o contexto de posicionamento para os submenus */
+    position: relative;
+}
+.opções__link::after,
+.lista-menu::after {
+    height: 100%;
+    z-index: -1;
+}
+.banner {
+    position: relative;
 }
 
 @media screen and (min-width: 1024px) {
@@ -439,12 +448,9 @@
         padding: 10px;
         border: 1px solid #ccc;
         width: 12em;
-        margin-top:0%;;
+        margin-top: 0%;
+        ;
         z-index: 1001;
-    }
-
-    .lista-menu-bug {
-        margin-top: -68.5vh;
     }
 
 
@@ -459,7 +465,7 @@
 
     .cabecalho {
         padding: 0 5em;
-  
+
     }
 
     .container__titulo,
@@ -522,7 +528,6 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 70.5vh;
         background-color: rgba(0, 0, 0, 0);
         opacity: 0;
         transition: opacity 0.3s ease;
@@ -534,19 +539,30 @@
     .opções__link:hover::after,
     .lista-menu .item:hover::after {
         background-color: rgba(0, 0, 0, 0.4);
-        opacity: 1;        
+        opacity: 1;
     }
+
     .opções__item {
-        position: relative; /* Define o contexto de posicionamento para os submenus */
+        position: relative;
+    }
+
+    .opções__link::after,
+    .lista-menu::after {
+        height: 100%;
+        z-index: -1;
+    }
+    .banner {
+        position: relative;
     }
 
 }
 
 @media screen and (min-width: 1728px) {
     #cart-counter {
-        margin-left:2.3rem;
-        margin-bottom: 2rem;    
+        margin-left: 2.3rem;
+        margin-bottom: 2rem;
     }
+
     .lista-menu {
         display: none;
         position: absolute;
@@ -554,13 +570,9 @@
         padding: 10px;
         border: 1px solid #ccc;
         width: 12em;
-        margin-top:0%;
+        margin-top: 0%;
         z-index: 1002;
 
-    }
-
-    .lista-menu-bug {
-        margin-top: -75.5vh;
     }
 
     .container__link {
@@ -582,13 +594,9 @@
     .container__texto {
         display: block;
     }
-
-    .opções__link::after,
-    .lista-menu::after {
-        height: 75.1vh;
-    }
     .opções__item {
-        position: relative; /* Define o contexto de posicionamento para os submenus */
-        
+        position: relative;
+
     }
+    
 }
