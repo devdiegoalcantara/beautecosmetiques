@@ -424,9 +424,7 @@
     height: 100%;
     z-index: -1;
 }
-.banner {
-    position: relative;
-}
+
 
 @media screen and (min-width: 1024px) {
     .main {
@@ -449,7 +447,6 @@
         border: 1px solid #ccc;
         width: 12em;
         margin-top: 0%;
-        ;
         z-index: 1001;
     }
 
@@ -459,8 +456,6 @@
         font-size: 24px;
         margin: 0 auto;
         position: relative;
-        z-index: 1001;
-
     }
 
     .cabecalho {
