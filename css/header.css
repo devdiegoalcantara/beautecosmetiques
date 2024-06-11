@@ -197,7 +197,6 @@
     top: 100%;
     width: 60vw;
     font-family: var(--fonte-principal);
-    margin-left: -2.5rem;
 }
 
 .container__botao:checked~.lista-menu {
@@ -448,6 +447,7 @@
         width: 12em;
         margin-top: 0%;
         z-index: 1001;
+        margin-left: -2.5rem;
     }
 
 
