@@ -45,9 +45,10 @@
 
 @media screen and (min-width: 1024px) {
     .banner {
+        position: relative;
         display: block;
         margin: 0;
-        z-index: 1200;
+        z-index: 1000;
     }
     
     .banner__titulo {
